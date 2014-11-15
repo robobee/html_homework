@@ -6,6 +6,12 @@ body {
     background: #cc6;
     color: #010;
     font-family: sans-serif;
+    counter-reset: question;
+}
+
+dt:before {
+    counter-increment: question;
+    content: counter(question) ". ";
 }
 
 section {
